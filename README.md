@@ -38,7 +38,7 @@ A responsive crypto conversion widget built with Next.js, TypeScript, Tailwind C
 ## Design System
 
 - **Primary Color:** #013941 (Dark teal)
-- **Subdued Color:** #828282 (Gray)
+- **Muted Color:** #828282 (Gray)
 - **Font:** Outfit (Google Fonts) and Clash Display (Fontshare)
 - **Theme:** Configured via CSS variables in `app/globals.css`
 
@@ -167,7 +167,7 @@ Edit `app/globals.css` to modify the color scheme:
 ```css
 @theme inline {
   --color-primary: #013941;
-  --color-subdued: #828282;
+  --color-muted: #828282;
   /* Add more custom colors */
 }
 ```
