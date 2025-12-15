@@ -55,23 +55,23 @@ A responsive crypto conversion widget built with Next.js, TypeScript, Tailwind C
 
 2. **Install dependencies:**
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 Or install packages individually:
 
-\`\`\`bash
+```bash
 npm install next@16.0.10 react@19.2.1 react-dom@19.2.1 react-hook-form@7.68.0 @hookform/resolvers@5.2.2 zod@4.2.0 @radix-ui/react-select @radix-ui/react-toast @radix-ui/react-dialog @radix-ui/react-label @radix-ui/react-slot sonner@2.0.7 lucide-react@0.561.0 clsx tailwind-merge class-variance-authority tailwindcss@4
 
 npm install -D typescript @types/node @types/react @types/react-dom
-\`\`\`
+```
 
 3. **Run the development server:**
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 4. **Open your browser:**
 
@@ -79,10 +79,10 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### Build for Production
 
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
 ## Assumptions
 
@@ -118,7 +118,7 @@ Wallet connections are simulated. The "Connect Wallet" buttons will show success
 
 ## Project Structure
 
-\`\`\`
+```
 ├── app/
 │   ├── layout.tsx          # Root layout with Outfit font
 │   ├── page.tsx            # Main page
@@ -136,7 +136,7 @@ Wallet connections are simulated. The "Connect Wallet" buttons will show success
 │   ├── conversion-rates.ts # Dummy exchange rates
 │   └── utils.ts            # Utility functions
 └── README.md
-\`\`\`
+```
 
 ## Key Components
 
@@ -164,25 +164,25 @@ All forms include validation for:
 
 Edit `app/globals.css` to modify the color scheme:
 
-\`\`\`css
+```css
 @theme inline {
   --color-primary: #013941;
   --color-subdued: #828282;
   /* Add more custom colors */
 }
-\`\`\`
+```
 
 ### Adding New Cryptocurrencies
 
 Update `lib/conversion-rates.ts`:
 
-\`\`\`typescript
+```typescript
 export const CONVERSION_RATES = {
   // Add new crypto
   SOL: 150,
   // ...
 }
-\`\`\`
+```
 
 ### Modifying Conversion Logic
 
